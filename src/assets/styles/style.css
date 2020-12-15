@@ -1,0 +1,132 @@
+.pc-container {
+  /* padding: 50px 0 0 0; */
+  padding: 16px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.first-view-wrap {
+  padding: 24px 0;
+  /* margin-left: auto;
+  margin-right: auto; */
+  overflow: hidden;
+  /* width: 300px; */
+  text-align: center;
+}
+
+.profile-icon {
+  width: 100px;
+}
+
+.first-view-name {
+  color: #222222;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.first-view-portfolio {
+  color: #9C9892;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat-icon {
+  width: 60px;
+}
+
+.admin-text {
+  background-color: #F6F5F3;
+  color: #696969;
+}
+
+.guest-text {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.answer-button {
+  border: 2px solid;
+  border-color: #222222;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: .5rem;
+  margin-right: 1rem;
+  margin-top: 24px;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.c-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.c-box {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 592px;
+  /* max-width: 432px; */
+  padding: 0 1rem;
+  width: 100%;
+
+  /* Vertical and horizontal center alignment */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-grid__answer {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 192px;
+}
+
+.p-chat__bubble {
+  /* background: #41B6E6; */
+  border-radius: 4px;
+  /* color: #fff; */
+  font-size: 14px;
+  font-weight: 500;
+  padding: .5rem;
+  margin-right: 1rem;
+  margin-top: 24px;
+  max-width: 80%;
+  width: auto;
+}
+
+.p-chat__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 0 !important;
+}
+
+.p-chat__reverse {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: flex-end;
+  padding-right: 0 !important;
+}
+
+.p-question__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.p-question__description {
+  font-size: 1rem;
+  letter-spacing: .125rem;
+  line-height: 1.7;
+}
