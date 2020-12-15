@@ -1,4 +1,4 @@
-export const defaultDataset = {
+const defaultDataset = {
   "init": {
       answers: [
           {content: "OK👌", nextId: "reazon"},
