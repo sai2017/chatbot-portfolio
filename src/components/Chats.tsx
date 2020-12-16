@@ -7,7 +7,7 @@ import { Chat } from '../components/index';
   
 const Chats: React.FC<Props> = ({chats}) => {
   return (
-    <div id={"scroll-area"}>
+    <div>
       {
         chats.map((chat: any, index: any) => {
           return <Chat text={chat.text} type={chat.type} key={index.toString()}/>

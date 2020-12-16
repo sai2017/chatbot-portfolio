@@ -9,11 +9,6 @@ const App: React.FC = () => {
   return (
     <div className='pc-container'>
       <Header />
-        <div className='first-view-wrap'>
-          <img src={ProfileIcon} className='profile-icon' />
-          <div className='first-view-name'>HIROAKI SASAKI</div>
-          <div className='first-view-portfolio'>PORTFOLIO</div>
-        </div>
       <Chatbot />
     </div>
   );

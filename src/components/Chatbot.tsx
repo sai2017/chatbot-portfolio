@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import defaultDataset from '../dataset';
 import '../assets/styles/style.css'
 import { AnswersList, Chats } from '../components/index';
+import ProfileIcon from '../assets/img/portfolio_icon.png'
 
 const Chatbot: React.FC = () => {
   const [answers, setAnswers] = useState<string[]>([]);
@@ -55,6 +56,7 @@ const Chatbot: React.FC = () => {
 
   useEffect(() => {
     const scrollArea = document.getElementById('scroll-area');
+    console.log(scrollArea);
 
     if (scrollArea) {
       scrollArea.scrollTop = scrollArea.scrollHeight;
@@ -62,8 +64,13 @@ const Chatbot: React.FC = () => {
   })
 
   return (
-    <section className='c-section'>
+    <section className='c-section' id='scroll-area'>
       <div className='c-box'>
+      <div className='first-view-wrap'>
+        <img src={ProfileIcon} className='profile-icon' />
+        <div className='first-view-name'>HIROAKI SASAKI</div>
+        <div className='first-view-portfolio'>PORTFOLIO</div>
+      </div>
         <Chats chats={chats} />
         <AnswersList answers={answers} select={selectAnswer} />
       </div>
