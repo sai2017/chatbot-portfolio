@@ -41,7 +41,8 @@ const Chatbot: React.FC = () => {
           type: 'answer'
         })
 
-        setChats(currentChats)
+        const newChats = Object.assign([], currentChats); 
+        setChats(newChats)
 
         // 相手が回答してから１秒後に次の質問が表示されるように
         setTimeout(() => displayNextQuestionId(nextQuestionId), 1000)
@@ -56,7 +57,6 @@ const Chatbot: React.FC = () => {
 
   useEffect(() => {
     const scrollArea = document.getElementById('scroll-area');
-    console.log(scrollArea);
 
     if (scrollArea) {
       scrollArea.scrollTop = scrollArea.scrollHeight;

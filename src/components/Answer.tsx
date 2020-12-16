@@ -6,11 +6,11 @@ import React from 'react';
     select: any;
   }
   
-const Answer: React.FC<Props> = props => {
+const Answer: React.FC<Props> = ({content, nextId, select}) => {
   return (
     <div>
-      <button onClick={() => props.select(props.content, props.nextId)} className='answer-button'>
-        {props.content}
+      <button onClick={() => select(content, nextId)} className='answer-button'>
+        {content}
       </button>
     </div>
   )
