@@ -78,7 +78,7 @@
   box-sizing: border-box;
   height: 592px;
   width: 700px;
-  /* padding: 0 1rem; */
+  padding: 0 16px;
   width: 100%;
 
   /* Vertical and horizontal center alignment */
@@ -105,7 +105,7 @@
   font-size: 14px;
   font-weight: 500;
   padding: .5rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   margin-top: 24px;
   max-width: 80%;
   width: auto;
