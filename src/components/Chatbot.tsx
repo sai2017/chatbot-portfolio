@@ -9,7 +9,6 @@ const Chatbot: React.FC = () => {
   const [chats, setChats] = useState([]);
   const [currentId, setCurrentId] = useState('init');
   const [dataset] = useState<any>(defaultDataset);
-  const [open, setOpen] = useState(false);
 
   const displayNextQuestionId = (nextQuestionId: string) => {
     const currentChats: any = chats;
@@ -23,7 +22,7 @@ const Chatbot: React.FC = () => {
     setCurrentId(nextQuestionId)
   }
 
-  const selectAnswer = (selectedAnswer: any, nextQuestionId: any) => {
+  const selectAnswer = (selectedAnswer: string, nextQuestionId: string) => {
     switch(true) {
       case (nextQuestionId === 'init'):
         displayNextQuestionId(nextQuestionId);
