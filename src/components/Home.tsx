@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import defaultDataset from '../dataset';
 import '../assets/styles/style.css'
-import { AnswersList, Chats } from '../components/index';
+import { AnswersList, Chats } from './index';
 import ProfileIcon from '../assets/img/portfolio_icon.png'
 
-const Chatbot: React.FC = () => {
+const Home: React.FC = () => {
   const [answers, setAnswers] = useState<string[]>([]);
   const [chats, setChats] = useState([]);
   const [currentId, setCurrentId] = useState('init');
@@ -77,4 +77,4 @@ const Chatbot: React.FC = () => {
   );
 }
 
-export default Chatbot;
+export default Home;
