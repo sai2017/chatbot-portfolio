@@ -1,4 +1,4 @@
-const defaultDataset = {
+export const chatbotDataset = {
   "init": {
       answers: [
           {content: "OK👌", nextId: "reazon"},
@@ -80,4 +80,19 @@ const defaultDataset = {
   },
 }
 
-export default defaultDataset
+export const skillDataset: {name: string, isEmphasis: boolean}[] = [
+    { name: 'UI design',     isEmphasis: true },
+    { name: 'UX design',     isEmphasis: true },
+    { name: 'Figma',         isEmphasis: true },
+    { name: 'adobe XD',      isEmphasis: false },
+    { name: 'デザインの言語化', isEmphasis: true },
+    { name: 'デザインリサーチ', isEmphasis: false },
+    { name: 'React',         isEmphasis: false },
+    { name: 'JavaScript',    isEmphasis: false },
+    { name: 'TypeScript',    isEmphasis: false },
+    { name: 'Ruby on Rails', isEmphasis: false },
+    { name: 'Ruby',          isEmphasis: false },
+    { name: 'SQL',           isEmphasis: false },
+    { name: 'GitHub',        isEmphasis: false },
+    { name: 'AWS',           isEmphasis: false }
+]

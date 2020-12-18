@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import defaultDataset from './dataset';
 import './assets/styles/style.css'
 import Chatbot from './components/Home'
 import Header from './components/Header'

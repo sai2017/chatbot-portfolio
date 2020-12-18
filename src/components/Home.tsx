@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import defaultDataset from '../dataset';
+import { chatbotDataset } from '../dataset';
 import '../assets/styles/style.css'
 import { AnswersList, Chats } from './index';
 import ProfileIcon from '../assets/img/portfolio_icon.png'
@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const [answers, setAnswers] = useState<string[]>([]);
   const [chats, setChats] = useState([]);
   const [currentId, setCurrentId] = useState('init');
-  const [dataset] = useState<any>(defaultDataset);
+  const [dataset] = useState<any>(chatbotDataset);
 
   const displayNextQuestionId = (nextQuestionId: string) => {
     const currentChats: any = chats;
