@@ -67,8 +67,8 @@ const Home: React.FC = () => {
       <div className='c-box'>
       <div className='first-view-wrap'>
         <img src={ProfileIcon} className='profile-icon' />
-        <div className='first-view-name'>HIROAKI SASAKI</div>
-        <div className='first-view-portfolio'>PORTFOLIO</div>
+        <div className='first-view-name'>minto</div>
+        <div className='first-view-portfolio'>UI/UX Desinger</div>
       </div>
         <Chats chats={chats} />
         <AnswersList answers={answers} select={selectAnswer} />
