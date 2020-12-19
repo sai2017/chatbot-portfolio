@@ -45,19 +45,21 @@ const Header: React.FC = () => {
           }
         </div>
       </Link>
-      <div className='header-icon'>
-        { location.pathname === "/work" ? (
-          <>
-            <img src={CurrentWorkIcon} />
-            <span className='navigation_item-label current-color'>WORK</span>
-          </>
-        ) : 
-          <>
-            <img src={WorkIcon} />
-            <span className='navigation_item-label'>WORK</span>
-          </>
-        }
-      </div>
+      <Link to="/work">
+        <div className='header-icon'>
+          { location.pathname === "/work" ? (
+            <>
+              <img src={CurrentWorkIcon} />
+              <span className='navigation_item-label current-color'>WORK</span>
+            </>
+          ) : 
+            <>
+              <img src={WorkIcon} />
+              <span className='navigation_item-label'>WORK</span>
+            </>
+          }
+        </div>
+      </Link>
       <div className='header-icon'>
         { location.pathname === "/contact" ? (
           <>

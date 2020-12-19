@@ -4,6 +4,7 @@ import './assets/styles/style.css'
 import Chatbot from './components/Home'
 import Header from './components/Header'
 import About from './components/About'
+import Work from './components/Work'
 import ProfileIcon from './assets/img/portfolio_icon.png'
 
 const App: React.FC = () => {
@@ -14,8 +15,8 @@ const App: React.FC = () => {
         <Switch>
           <Route exact={true} path="/" component={Chatbot} />
           <Route path="/about" component={About} />
-          {/* <Route path="/about" component={} />
-          <Route path="/contact" component={} /> */}
+          <Route path="/work" component={Work} />
+          {/* <Route path="/contact" component={} /> */}
           {/* Not Found */}
           <Route component={() => <Redirect to="/" />} />
         </Switch>
