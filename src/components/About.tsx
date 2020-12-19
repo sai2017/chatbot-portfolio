@@ -31,7 +31,6 @@ const About: React.FC = () => {
         <div className='tags-wrap'>
           {
             skillDataset.map((skill, index) => {
-              console.log(skill.name)
               if (skill.isEmphasis === true) {
                 return <div className='emphasis-tags' key={index}>
                   <div className='tags-text'>{skill.name}</div>
