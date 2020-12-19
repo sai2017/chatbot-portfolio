@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { chatbotDataset } from '../dataset';
 import '../assets/styles/style.css'
 import { AnswersList, Chats } from './index';
-import ProfileIcon from '../assets/img/portfolio_icon.png'
+import ProfileIcon from '../assets/img/minto_icon.png'
 
 const Home: React.FC = () => {
   const [answers, setAnswers] = useState<string[]>([]);

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/about.css'
-import ProfileIcon from '../assets/img/portfolio_icon.png'
+import ProfileIcon from '../assets/img/minto_icon.png'
 import { skillDataset } from '../dataset'
 
 const About: React.FC = () => {
@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <img src={ProfileIcon} className='profile-icon' />
           <div className='basic-text-profile-wrap'>
             <div className='profile-name'>minto</div>
-            <div className='profile-occupation'>UI/UXデザイナー</div>
+            <div className='profile-occupation'>UI/UX Desinger</div>
           </div>
         </div>
         <div className='profile-title'>ありのままで生きる。</div>
