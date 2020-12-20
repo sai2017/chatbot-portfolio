@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './assets/styles/style.css'
 import Chatbot from './components/Home'
 import Header from './components/Header'
 import About from './components/About'
 import Work from './components/Work'
-import ProfileIcon from './assets/img/portfolio_icon.png'
+import Contact from './components/Contact'
 
 const App: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const App: React.FC = () => {
           <Route exact={true} path="/" component={Chatbot} />
           <Route path="/about" component={About} />
           <Route path="/work" component={Work} />
-          {/* <Route path="/contact" component={} /> */}
+          <Route path="/contact" component={Contact} />
           {/* Not Found */}
           <Route component={() => <Redirect to="/" />} />
         </Switch>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../assets/styles/header.css'
 import HomeIcon from '../assets/img/ic_outline-home.svg'
@@ -60,19 +60,21 @@ const Header: React.FC = () => {
           }
         </div>
       </Link>
-      <div className='header-icon'>
-        { location.pathname === "/contact" ? (
-          <>
-            <img src={CurrentContactIcon} />
-            <span className='navigation_item-label current-color'>CONTACT</span>
-          </>
-        ) : 
-          <>
-            <img src={ContactIcon} />
-            <span className='navigation_item-label'>CONTACT</span>
-          </>
-        }
-      </div>
+      <Link to="/contact">
+        <div className='header-icon'>
+          { location.pathname === "/contact" ? (
+            <>
+              <img src={CurrentContactIcon} />
+              <span className='navigation_item-label current-color'>CONTACT</span>
+            </>
+          ) : 
+            <>
+              <img src={ContactIcon} />
+              <span className='navigation_item-label'>CONTACT</span>
+            </>
+          }
+        </div>
+      </Link>
     </div>
   );
 }

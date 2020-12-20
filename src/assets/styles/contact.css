@@ -1,0 +1,26 @@
+.contact-wrap {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.contact-profile-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.contact-description {
+  color: #696969;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+.contact-icons {
+  padding-top: 16px;
+}
+
+.contact-icon {
+  padding: 0 12px;
+}

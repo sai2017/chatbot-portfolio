@@ -1,0 +1,29 @@
+import React from "react";
+import '../assets/styles/style.css'
+import '../assets/styles/contact.css'
+import ProfileIcon from '../assets/img/minto_icon.png'
+import TwitterIcon from '../assets/img/ant-design_twitter-circle-filled.svg'
+import GitHubIcon from '../assets/img/ant-design_github-filled.svg'
+
+const Contact: React.FC = () => {
+
+  return (
+        <div className='contact-wrap'>
+          <img src={ProfileIcon} className='contact-profile-icon' />
+          <div className='contact-description'>
+            <p>お問い合わせは以下のTwitterのDMでお待ちしております。</p>
+            <p>お仕事のご依頼、ポートフォリオの感想等、お気軽にご連絡下さいませ。</p>
+          </div>
+          <div className='contact-icons'>
+            <a href='https://twitter.com/minto_tokyo' target="_blank">
+              <img src={TwitterIcon} className='contact-icon'/>
+            </a>
+            <a href='https://github.com/sai2017' target="_blank">
+              <img src={GitHubIcon} className='contact-icon'/>
+            </a>
+          </div>
+        </div>
+  );
+}
+
+export default Contact;
