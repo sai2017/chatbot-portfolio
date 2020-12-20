@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface Props {
-  text: any;
-  type: any;
+  text: string,
+  type: string
 }
 
 const Chat: React.FC<Props> = ({text, type}) => {

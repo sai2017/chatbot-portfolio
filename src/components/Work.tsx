@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/styles/work.css'
+import { WorkModel } from '../models/WorkModel'
 import SearchImage from '../assets/img/cocoda_search_figma.png'
 import RemenImage from '../assets/img/Remen_figma.png'
 import ListImage from '../assets/img/cocoda_list_figma.png'
@@ -12,16 +13,9 @@ import SignupImage from '../assets/img/cocoda_signup_figma.png'
 import SnsProfileImage from '../assets/img/cocoda_profile_figma.png'
 import FigmaPortfolioImage from '../assets/img/figma_minto_portfolio_cover.png'
 
-interface WorksDatasetProps {
-  title: string,
-  role: string,
-  imgSrc: string,
-  url: string
-}
-
 const Work: React.FC = () => {
 
-  const WorksDataset: WorksDatasetProps[] = [
+  const WorksDataset: WorkModel[] = [
     {
       title: 'ラーメンに特化したレビューアプリ『ReMen』',
       role: 'UX/UIデザイン',

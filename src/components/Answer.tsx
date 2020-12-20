@@ -1,10 +1,10 @@
 import React from 'react';
 
-  interface Props {
-    content: any;
-    nextId: any;
-    select: any;
-  }
+interface Props {
+  content: string;
+  nextId: string;
+  select: (selectedAnswer: string, nextQuestionId: string) => void;
+}
   
 const Answer: React.FC<Props> = ({content, nextId, select}) => {
   return (

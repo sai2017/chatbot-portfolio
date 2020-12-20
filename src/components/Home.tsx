@@ -2,16 +2,19 @@ import React, { useState, useEffect } from "react";
 import { chatbotDataset } from '../dataset';
 import '../assets/styles/style.css'
 import { AnswersList, Chats } from './index';
+import { ChatbotDatasetModel } from '../models/ChatbotDatasetModel'
+import { AnswerModel } from '../models/AnswerModel'
+import { ChatModel } from '../models/ChatModel'
 import ProfileIcon from '../assets/img/minto_icon.png'
 
 const Home: React.FC = () => {
-  const [answers, setAnswers] = useState<string[]>([]);
-  const [chats, setChats] = useState([]);
-  const [currentId, setCurrentId] = useState('init');
-  const [dataset] = useState<any>(chatbotDataset);
+  const [answers, setAnswers] = useState<AnswerModel[]>([]);
+  const [chats, setChats] = useState<ChatModel[]>([]);
+  const [currentId, setCurrentId] = useState<string>('init');
+  const [dataset] = useState<ChatbotDatasetModel>(chatbotDataset);
 
   const displayNextQuestionId = (nextQuestionId: string) => {
-    const currentChats: any = chats;
+    const currentChats: ChatModel[] = chats;
     currentChats.push({
       text: dataset[nextQuestionId].question,
       type: 'question'
@@ -34,7 +37,7 @@ const Home: React.FC = () => {
         a.click();
         break;
       default:
-        const currentChats: any = chats;
+        const currentChats: ChatModel[] = chats;
         currentChats.push({
           text: selectedAnswer,
           type: 'answer'
