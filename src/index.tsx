@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import './assets/styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  // URLが変わったとき（画面遷移したとき）スクロールの位置を先頭まで戻す
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 ReactDOM.render(
   <React.StrictMode>
+    <ScrollToTop />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
