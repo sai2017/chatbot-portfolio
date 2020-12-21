@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <div className='about-page-wrap'>
       <div className='profile-wrap'>
         <div className='profile-header'>
-          <img src={ProfileIcon} className='profile-icon' />
+          <img src={ProfileIcon} alt='mintoの画像' className='profile-icon' />
           <div className='basic-text-profile-wrap'>
             <div className='profile-name'>minto</div>
             <div className='profile-occupation'>UI/UX Desinger</div>

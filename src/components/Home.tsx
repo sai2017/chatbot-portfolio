@@ -69,7 +69,7 @@ const Home: React.FC = () => {
     <section className='c-section' id='scroll-area'>
       <div className='c-box'>
       <div className='first-view-wrap'>
-        <img src={ProfileIcon} className='profile-icon' />
+        <img src={ProfileIcon} alt='mintoの画像' className='profile-icon' />
         <div className='first-view-name'>minto</div>
         <div className='first-view-portfolio'>UI/UX Desinger</div>
       </div>

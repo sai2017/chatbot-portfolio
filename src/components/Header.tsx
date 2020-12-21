@@ -19,12 +19,12 @@ const Header: React.FC = () => {
         <div className='header-icon'>
           { location.pathname === "/" ? (
             <>
-              <img src={CurrentHomeIcon} />
+              <img src={CurrentHomeIcon} alt='homeアイコン' />
               <span className='navigation_item-label current-color'>HOME</span>
             </>
           ) : 
             <>
-              <img src={HomeIcon} />
+              <img src={HomeIcon} alt='homeアイコン' />
               <span className='navigation_item-label'>HOME</span>
             </>
           }
@@ -34,12 +34,12 @@ const Header: React.FC = () => {
         <div className='header-icon'>
           { location.pathname === "/about" ? (
             <>
-              <img src={CurrentAboutIcon} />
+              <img src={CurrentAboutIcon} alt='aboutアイコン' />
               <span className='navigation_item-label current-color'>ABOUT</span>
             </>
           ) : 
             <>
-              <img src={AboutIcon} />
+              <img src={AboutIcon} alt='aboutアイコン' />
               <span className='navigation_item-label'>ABOUT</span>
             </>
           }
@@ -49,12 +49,12 @@ const Header: React.FC = () => {
         <div className='header-icon'>
           { location.pathname === "/work" ? (
             <>
-              <img src={CurrentWorkIcon} />
+              <img src={CurrentWorkIcon} alt='workアイコン' />
               <span className='navigation_item-label current-color'>WORK</span>
             </>
           ) : 
             <>
-              <img src={WorkIcon} />
+              <img src={WorkIcon} alt='workアイコン' />
               <span className='navigation_item-label'>WORK</span>
             </>
           }
@@ -64,12 +64,12 @@ const Header: React.FC = () => {
         <div className='header-icon'>
           { location.pathname === "/contact" ? (
             <>
-              <img src={CurrentContactIcon} />
+              <img src={CurrentContactIcon} alt='contactアイコン' />
               <span className='navigation_item-label current-color'>CONTACT</span>
             </>
           ) : 
             <>
-              <img src={ContactIcon} />
+              <img src={ContactIcon} alt='contactアイコン' />
               <span className='navigation_item-label'>CONTACT</span>
             </>
           }

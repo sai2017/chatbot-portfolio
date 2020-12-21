@@ -89,9 +89,9 @@ const Work: React.FC = () => {
       {
         WorksDataset.map((work, index) => {
           return (
-            <a href={work.url} target="_blank" key={index}>
+            <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
               <div className='work-wrap'>
-                <img src={work.imgSrc} className='work-image'/>
+                <img src={work.imgSrc} alt='成果物の画像' className='work-image'/>
                 <p className='work-title'>{work.title}</p>
                 <p className='work-role'>{work.role}</p>
               </div>
