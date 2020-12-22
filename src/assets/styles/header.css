@@ -10,15 +10,11 @@
   align-items: center;
   background-color: #ffffff;
   height: 50px;
+}
 
-  /* background-color: red;
-  border-bottom: 1px solid #e9eef1;
-  padding: 10px 10px 5px;
-  display: flex;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 100; */
+.header-item {
+  justify-content: center;
+  width: 25%;
 }
 
 .header-icon {

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   
   return (
     <div className='header'>
-      <Link to="/">
+      <Link to="/" className='header-item'>
         <div className='header-icon'>
           { location.pathname === "/" ? (
             <>
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           }
         </div>
       </Link>
-      <Link to="/about">
+      <Link to="/about" className='header-item'>
         <div className='header-icon'>
           { location.pathname === "/about" ? (
             <>
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           }
         </div>
       </Link>
-      <Link to="/work">
+      <Link to="/work" className='header-item'>
         <div className='header-icon'>
           { location.pathname === "/work" ? (
             <>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           }
         </div>
       </Link>
-      <Link to="/contact">
+      <Link to="/contact" className='header-item'>
         <div className='header-icon'>
           { location.pathname === "/contact" ? (
             <>
