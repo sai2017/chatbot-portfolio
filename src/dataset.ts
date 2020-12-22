@@ -31,21 +31,21 @@ export const chatbotDataset = {
   },
   "UIUX": {
       answers: [
-          {content: "DMする", nextId: "https://twitter.com/minto_tokyo"},
+          {content: "DMする", nextId: "https://twitter.com/minto_design"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
       question: "UI/UXデザイン、承知しました！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
   },
   "coding": {
       answers: [
-        　{content: "DMする", nextId: "https://twitter.com/minto_tokyo"},
+        　{content: "DMする", nextId: "https://twitter.com/minto_design"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
       question: "コーディング、承知しました！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
   },
   "other_jobs": {
       answers: [
-        　{content: "DMする", nextId: "https://twitter.com/minto_tokyo"},
+        　{content: "DMする", nextId: "https://twitter.com/minto_design"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
       question: "その他について、承知しました！\nそれではTwitterのDMで詳細をお伺いできればと思います！",

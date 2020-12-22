@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
             <p>お仕事のご依頼、ポートフォリオの感想等、お気軽にご連絡下さいませ。</p>
           </div>
           <div className='contact-icons'>
-            <a href='https://twitter.com/minto_tokyo' target="_blank" rel="noopener noreferrer">
+            <a href='https://twitter.com/minto_design' target="_blank" rel="noopener noreferrer">
               <img src={TwitterIcon} alt='Twitterのアイコン' className='contact-icon'/>
             </a>
             <a href='https://github.com/sai2017' target="_blank" rel="noopener noreferrer">
