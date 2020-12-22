@@ -41,9 +41,9 @@ const Header: React.FC = () => {
           }
         </div>
       </Link>
-      <Link to="/work" className='header-item'>
+      <Link to="/works" className='header-item'>
         <div className='header-icon'>
-          { location.pathname === "/work" ? (
+          { location.pathname === "/works" ? (
             <>
               <WorkIcon color={'#222222'} />
               <span className='navigation_item-label current-color'>WORKS</span>
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
           ) : 
             <>
               <WorkIcon />
-              <span className='navigation_item-label'>WORK</span>
+              <span className='navigation_item-label'>WORKS</span>
             </>
           }
         </div>

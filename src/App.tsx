@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <Switch>
           <Route exact={true} path="/" component={Chatbot} />
           <Route path="/about" component={About} />
-          <Route path="/work" component={Work} />
+          <Route path="/works" component={Work} />
           <Route path="/contact" component={Contact} />
           {/* Not Found */}
           <Route component={() => <Redirect to="/" />} />
