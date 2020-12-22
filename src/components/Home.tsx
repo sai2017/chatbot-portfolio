@@ -5,7 +5,7 @@ import { AnswersList, Chats } from './index';
 import { ChatbotDatasetModel } from '../models/ChatbotDatasetModel'
 import { AnswerModel } from '../models/AnswerModel'
 import { ChatModel } from '../models/ChatModel'
-import ProfileIcon from '../assets/img/minto_icon.png'
+import ProfileIcon from '../assets/img/minto-image-min.jpg'
 
 const Home: React.FC = () => {
   const [answers, setAnswers] = useState<AnswerModel[]>([]);

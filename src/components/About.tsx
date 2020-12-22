@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/about.css'
-import ProfileIcon from '../assets/img/minto_icon.png'
+import ProfileIcon from '../assets/img/minto-image-min.jpg'
 import { skillDataset } from '../dataset'
 
 const About: React.FC = () => {
