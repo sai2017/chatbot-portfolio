@@ -1,32 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/styles/work.css'
 import { WorkModel } from '../models/WorkModel'
-import SearchImage from '../assets/img/cocoda_search_figma.png'
-import RemenImage from '../assets/img/Remen_figma.png'
-import ListImage from '../assets/img/cocoda_list_figma.png'
-import MusicPlayImage from '../assets/img/cocoda_music_play_figma.png'
-import MessageImage from '../assets/img/cocoda_message_figma.png'
-import ContactImage from '../assets/img/cocoda_contact_figma.png'
+import SearchImage from '../assets/img/daily_cocoda_search-min.jpg'
+import RemenImage from '../assets/img/remen-image3-min.jpg'
+import ListImage from '../assets/img/daily_cocoda_list-min.jpg'
+import MusicPlayImage from '../assets/img/daily_cocoda_music_play-min.jpg'
+import MessageImage from '../assets/img/daily_cocoda_message-min.jpg'
+import ContactImage from '../assets/img/daily_cocoda_contact-min.jpg'
 import MapImage from '../assets/img/daily_cocoda_map-min.jpg'
 import CalculatorImage from '../assets/img/daily_cocoda_calculator-min.jpg'
 import SignupImage from '../assets/img/daily_cocoda_signup-min.jpg'
 import SnsProfileImage from '../assets/img/daily_cocoda_profile-min.jpg'
 import FigmaPortfolioImage from '../assets/img/minto_portfolio_cover-min.jpg'
-import { SpinnerCircular, SpinnerCircularFixed } from 'spinners-react';
+import { SpinnerCircularFixed } from 'spinners-react';
 
 const Work: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    // setTimeout(() => setLoading(false), 1500)
+    setTimeout(() => setLoading(false), 1500)
   }, [])
-
-  useEffect(() => {
-    // const aaa = document.getElementById('test')
-    // console.log(aaa)
-    setLoading(false)
-  })
-
 
   const WorksDataset: WorkModel[] = [
     {
