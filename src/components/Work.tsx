@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import '../assets/styles/work.css'
 import { WorkModel } from '../models/WorkModel'
 import SearchImage from '../assets/img/daily_cocoda_search-min.jpg'
@@ -16,11 +16,14 @@ import { SpinnerCircularFixed } from 'spinners-react';
 
 const Work: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
-  const img = new Image()
+  const counter = useRef(0);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000)
-  }, [])
+  const imageLoaded = () => {
+    counter.current += 1
+    if (counter.current >= WorksDataset.length) {
+      setLoading(false);
+    }
+  }
 
   const WorksDataset: WorkModel[] = [
     {
@@ -93,21 +96,16 @@ const Work: React.FC = () => {
 
   return (
     <>
-    { 
-      loading === true ? (
-        <div className='loading-wrap'>
-          <SpinnerCircularFixed color='#222222' secondaryColor='#DADADA' className='loading-work-image' />
-        </div>
-
-    ) :
-      <div className='works-page-wrap'>
+      <div className='loading-wrap' style={{display: loading ? "block" : "none"}}>
+        <SpinnerCircularFixed color='#222222' secondaryColor='#DADADA' className='loading-work-image' />
+      </div>
+      <div className='works-page-wrap' style={{display: loading ? "none" : "block"}}>
         {
           WorksDataset.map((work, index) => {
-            img.src = work.imgSrc
             return (
               <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
                 <div className='work-wrap'>
-                  <img src={work.imgSrc} alt='成果物の画像' className='work-image'/>
+                  <img src={work.imgSrc} alt='成果物の画像' className='work-image' onLoad={imageLoaded} />
                   <p className='work-title'>{work.title}</p>
                   <p className='work-role'>{work.role}</p>
                 </div>
@@ -116,7 +114,6 @@ const Work: React.FC = () => {
           })
         }
       </div>
-    }
     </>
   );
 }
