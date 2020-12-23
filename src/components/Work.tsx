@@ -18,7 +18,7 @@ const Work: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    setLoading(false)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   const WorksDataset: WorkModel[] = [
@@ -91,25 +91,31 @@ const Work: React.FC = () => {
   ]
 
   return (
-    <div className='works-page-wrap'>
-      {
-        WorksDataset.map((work, index) => {
-          return (
-            <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
-              <div className='work-wrap'>
-                { loading === true ? (
-                  <SpinnerCircularFixed color='#222222' secondaryColor='#DADADA' />
-                ) : 
+    <>
+    { 
+      loading === true ? (
+        <div className='loading-wrap'>
+          <SpinnerCircularFixed color='#222222' secondaryColor='#DADADA' className='loading-work-image' />
+        </div>
+
+    ) :
+      <div className='works-page-wrap'>
+        {
+          WorksDataset.map((work, index) => {
+            return (
+              <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
+                <div className='work-wrap'>
                   <img src={work.imgSrc} alt='成果物の画像' className='work-image'/>
-                }
-                <p className='work-title'>{work.title}</p>
-                <p className='work-role'>{work.role}</p>
-              </div>
-            </a>
-          )
-        })
-      }
-    </div>
+                  <p className='work-title'>{work.title}</p>
+                  <p className='work-role'>{work.role}</p>
+                </div>
+              </a>
+            )
+          })
+        }
+      </div>
+    }
+    </>
   );
 }
 
