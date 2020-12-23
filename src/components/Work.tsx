@@ -16,9 +16,11 @@ import { SpinnerCircularFixed } from 'spinners-react';
 
 const Work: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
+  const img = new Image()
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500)
+    setLoading(false)
+    // setTimeout(() => setLoading(false), 1500)
   }, [])
 
   const WorksDataset: WorkModel[] = [
@@ -102,6 +104,8 @@ const Work: React.FC = () => {
       <div className='works-page-wrap'>
         {
           WorksDataset.map((work, index) => {
+            img.src = work.imgSrc
+            // console.log(img.src)
             return (
               <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
                 <div className='work-wrap'>
