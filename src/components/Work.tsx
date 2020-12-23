@@ -18,8 +18,15 @@ const Work: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500)
+    // setTimeout(() => setLoading(false), 1500)
   }, [])
+
+  useEffect(() => {
+    // const aaa = document.getElementById('test')
+    // console.log(aaa)
+    setLoading(false)
+  })
+
 
   const WorksDataset: WorkModel[] = [
     {
