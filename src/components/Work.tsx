@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/styles/work.css'
 import { WorkModel } from '../models/WorkModel'
 import SearchImage from '../assets/img/cocoda_search_figma.png'
@@ -14,6 +14,11 @@ import SnsProfileImage from '../assets/img/daily_cocoda_profile-min.jpg'
 import FigmaPortfolioImage from '../assets/img/minto_portfolio_cover-min.jpg'
 
 const Work: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(true)
+
+  useEffect(() => {
+    setLoading(false)
+  }, [])
 
   const WorksDataset: WorkModel[] = [
     {
@@ -91,7 +96,11 @@ const Work: React.FC = () => {
           return (
             <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
               <div className='work-wrap'>
+                { loading === true ? (
+                  <div className='work-image'>ローディング中</div>
+                ) : 
                 <img src={work.imgSrc} alt='成果物の画像' className='work-image'/>
+                }
                 <p className='work-title'>{work.title}</p>
                 <p className='work-role'>{work.role}</p>
               </div>
