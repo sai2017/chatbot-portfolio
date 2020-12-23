@@ -19,8 +19,7 @@ const Work: React.FC = () => {
   const img = new Image()
 
   useEffect(() => {
-    setLoading(false)
-    // setTimeout(() => setLoading(false), 1500)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   const WorksDataset: WorkModel[] = [
@@ -105,7 +104,6 @@ const Work: React.FC = () => {
         {
           WorksDataset.map((work, index) => {
             img.src = work.imgSrc
-            // console.log(img.src)
             return (
               <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
                 <div className='work-wrap'>
