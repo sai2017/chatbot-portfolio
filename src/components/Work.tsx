@@ -12,7 +12,7 @@ import CalculatorImage from '../assets/img/daily_cocoda_calculator-min.jpg'
 import SignupImage from '../assets/img/daily_cocoda_signup-min.jpg'
 import SnsProfileImage from '../assets/img/daily_cocoda_profile-min.jpg'
 import FigmaPortfolioImage from '../assets/img/minto_portfolio_cover-min.jpg'
-import WebPortfolioImage from '../assets/img/portfolio_ogp_image.png'
+import WebPortfolioImage from '../assets/img/web_portfolio_image-min.jpg'
 import { SpinnerCircularFixed } from 'spinners-react';
 
 const Work: React.FC = () => {
