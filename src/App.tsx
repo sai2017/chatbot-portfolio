@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './assets/styles/style.css'
-import Chatbot from './components/Home'
+import Home from './components/Home'
 import Header from './components/Header'
 import About from './components/About'
 import Work from './components/Work'
@@ -26,7 +26,7 @@ const App: React.FC = () => {
         <ScrollToTop />
         <Header />
         <Switch>
-          <Route exact={true} path="/" component={Chatbot} />
+          <Route exact={true} path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/works" component={Work} />
           <Route path="/contact" component={Contact} />
