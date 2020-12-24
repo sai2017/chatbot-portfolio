@@ -12,6 +12,7 @@ import CalculatorImage from '../assets/img/daily_cocoda_calculator-min.jpg'
 import SignupImage from '../assets/img/daily_cocoda_signup-min.jpg'
 import SnsProfileImage from '../assets/img/daily_cocoda_profile-min.jpg'
 import FigmaPortfolioImage from '../assets/img/minto_portfolio_cover-min.jpg'
+import WebPortfolioImage from '../assets/img/web_portfolio_image-min.jpg'
 import { SpinnerCircularFixed } from 'spinners-react';
 
 const Work: React.FC = () => {
@@ -93,6 +94,12 @@ const Work: React.FC = () => {
       role: 'UX/UIデザイン',
       imgSrc: FigmaPortfolioImage,
       url: 'https://www.figma.com/file/dpQQjNTvm7XVRpCvc9m7J3/minto_portfolio?node-id=0%3A1'
+    },
+    {
+      title: 'Web版ポートフォリオ',
+      role: 'UX/UI, React, React hooks, TypeScript, Firebase',
+      imgSrc: WebPortfolioImage,
+      url: 'https://github.com/sai2017/chatbot-portfolio'
     }
   ]
 
