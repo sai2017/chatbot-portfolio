@@ -2,53 +2,53 @@ export const chatbotDataset = {
   "init": {
       answers: [
           {content: "OK👌", nextId: "reazon"},
-          {content: "ごめんなさい😣", nextId: "sorry"}
+          {content: "ごめんなさい🙏", nextId: "sorry"}
       ],
-      question: "こんにちは！\nエンジニアリングもできるUI/UXデザイナーのmintoです。\nちょっとお話してみませんか？",
+      question: "こんにちは！\nエンジニアリングもできるUI/UXデザイナーのmintoです。\nちょっとお話しませんか？",
   },
   "reazon": {
     answers: [
-      {content: "デザインに興味がある", nextId: "design"},
-      {content: "一緒にお仕事したい", nextId: "job_offer"},
-      {content: "なんとなく", nextId: "somehow"}
+      {content: "デザインに興味がある🎨", nextId: "design"},
+      {content: "一緒にお仕事したい💼", nextId: "job_offer"},
+      {content: "特になし", nextId: "somehow"}
     ],
-    question: "ありがとうございます！ここに来てくれた理由は何でしょうか？",
+    question: "ありがとうございます！あなたが興味を持っていることは何でしょうか？",
   },
   "design": {
       answers: [
           {content: "noteに行く", nextId: "https://note.com/minto_tokyo"},
           {content: "最初の質問に戻る", nextId: "init"},
       ],
-      question: "おー！一緒ですね！\n僕、不定期にnoteでデザインに関する記事を書いてたりするので、是非読んでいただけると嬉しいです！",
+      question: "一緒ですね！\n僕、不定期にnoteでデザインに関する記事を書いてたりするので、是非読んでいただけると嬉しいです！",
   },
   "job_offer": {
       answers: [
-          {content: "UI/UXデザイン", nextId: "UIUX"},
-          {content: "コーディング", nextId: "coding"},
+          {content: "UI/UXデザイン🎨", nextId: "UIUX"},
+          {content: "コーディング💻", nextId: "coding"},
           {content: "その他", nextId: "other_jobs"}
       ],
-      question: "ありがとうございます！\nどういったお仕事内容でしょうか？",
+      question: "ありがとうございます！\nどのようなお仕事内容でしょうか？",
   },
   "UIUX": {
       answers: [
           {content: "DMする", nextId: "https://twitter.com/minto_design"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
-      question: "UI/UXデザイン、承知しました！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
+      question: "UI/UXデザインですね！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
   },
   "coding": {
       answers: [
         　{content: "DMする", nextId: "https://twitter.com/minto_design"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
-      question: "コーディング、承知しました！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
+      question: "コーディングですね！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
   },
   "other_jobs": {
       answers: [
         　{content: "DMする", nextId: "https://twitter.com/minto_design"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
-      question: "その他について、承知しました！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
+      question: "その他についてですね！\nそれではTwitterのDMで詳細をお伺いできればと思います！",
   },
   "sorry": {
       answers: [
@@ -58,11 +58,11 @@ export const chatbotDataset = {
   },
   "somehow": {
       answers: [
-          {content: "ラーメン", nextId: "ramen"},
-          {content: "カレー", nextId: "curry"},
+          {content: "ラーメン🍜", nextId: "ramen"},
+          {content: "カレー🍛", nextId: "curry"},
           {content: "最初の質問に戻る", nextId: "init"}
       ],
-      question: "貴重なお時間を僕に割いてくれてありがとうございます！\nそんなあなたにとっておきの情報をお伝えします。\nどんな情報が知りたいですか？",
+      question: "なんとなく来て頂いたあなたにとっておきの情報をお伝えします。\nどんな情報が知りたいですか？",
   },
   "ramen": {
       answers: [
