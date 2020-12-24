@@ -16,10 +16,12 @@ import { SpinnerCircularFixed } from 'spinners-react';
 
 const Work: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true)
-  const counter = useRef(0);
+  const counter = useRef<number>(0);
 
   const imageLoaded = () => {
+    // 画像を一つ読み込む毎に1増やす
     counter.current += 1
+    // 全ての画像の読み込みが終わったらloadingをfalseにする
     if (counter.current >= WorksDataset.length) {
       setLoading(false);
     }
