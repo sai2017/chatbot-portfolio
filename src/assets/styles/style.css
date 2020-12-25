@@ -57,29 +57,6 @@
   text-align: center;
 }
 
-.c-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: scroll;
-}
-
-.c-box {
-  background: #fff;
-  border-radius: 4px;
-  box-sizing: border-box;
-  height: 610px;
-  width: 700px;
-  padding: 0 16px;
-  width: 100%;
-
-  /* Vertical and horizontal center alignment */
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .c-grid__answer {
   display: flex;
   flex-flow: column;
@@ -120,4 +97,17 @@
   font-size: 1rem;
   letter-spacing: .125rem;
   line-height: 1.7;
+}
+
+.chatPage {
+  max-width: 700px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.messagesArea {
+  padding: 0 16px 40px;
+  max-width: 700px;
+  width: 700px;
 }

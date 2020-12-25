@@ -58,25 +58,23 @@ const Home: React.FC = () => {
   }, [])
 
   useEffect(() => {
-    const scrollArea = document.getElementById('scroll-area');
-
-    if (scrollArea) {
-      scrollArea.scrollTop = scrollArea.scrollHeight;
-    }
+    const elm = document.documentElement;
+    const bottom = elm.scrollHeight - elm.clientHeight;
+    window.scroll(0, bottom);
   })
 
   return (
-    <section className='c-section' id='scroll-area'>
-      <div className='c-box'>
-      <div className='first-view-wrap'>
-        <img src={ProfileIcon} alt='mintoの画像' className='profile-icon' />
-        <div className='first-view-name'>minto</div>
-        <div className='first-view-portfolio'>UI/UX Desinger</div>
-      </div>
+    <div className='chatPage'>
+      <div className='messagesArea'>
+        <div className='first-view-wrap'>
+          <img src={ProfileIcon} alt='mintoの画像' className='profile-icon' />
+          <div className='first-view-name'>minto</div>
+          <div className='first-view-portfolio'>UI/UX Desinger</div>
+        </div>
         <Chats chats={chats} />
         <AnswersList answers={answers} select={selectAnswer} />
       </div>
-    </section>
+    </div>
   );
 }
 
