@@ -16,7 +16,7 @@ const About: React.FC = () => {
         </div>
         <div className='profile-title'>ありのままで生きる。</div>
         <div className='introduction-wrap'>
-          エンジニアリングのできるUIデザイナーです。<br/>ここ数年はエンジニアとして複数のスタートアップで開発をしてきましたが、デザインの面白みと重要性を実感し、2021年1月からUI/UXデザ イナーに転職することにしました。
+          エンジニアリングのできるUIデザイナーです。<br/>ここ数年はエンジニアとして複数のスタートアップで開発をしてきましたが、個人開発で0からサービスを作っていく過程で、デザインの面白みと重要性を実感しました。今はエンジニアリングに加え、UIデザイン、UXデザインまで幅を広げています。
         </div>
         <div className='profile-title'>略歴</div>
         <div className='introduction-wrap'>
@@ -25,7 +25,7 @@ const About: React.FC = () => {
         ［2017〜2019］プログラミングを学びエンジニアに。<br/>
         　複数のスタートアップでサーバーサイドからフロントエンドまで経験。<br/>
         ［2020］個人開発を経験後、UI/UXデザインを学ぶ。<br/>
-        ［2021］1月から某事業会社でUI/UXデザイナーとして勤務予定
+        {/* ［2021］1月から某事業会社でUI/UXデザイナーとして勤務予定 */}
         </div>
         <div className='profile-title'>スキル・特徴</div>
         <div className='tags-wrap'>
