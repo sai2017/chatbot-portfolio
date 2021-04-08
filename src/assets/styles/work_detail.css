@@ -1,0 +1,93 @@
+.work-page-wrap {
+  padding: 0 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.work-detail-wrap {
+  padding-top: 0px;
+}
+
+.work-detail-image {
+  max-width: 100%;
+}
+
+.loading-wraps {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.work-detail-title {
+  color: #222222;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 24px 16px 0;
+}
+
+.work-detail-role {
+  color: #9C9892;
+  font-size: 24px;
+  margin: 8px 16px 0;
+}
+
+.work-detail-overview {
+  color: #696969;
+  font-size: 20px;
+  margin: 42px 16px 0;
+  line-height: 32px;
+}
+
+.introduction-wrap {
+  color: #696969;
+  margin-top: 16px;
+  max-width: 700px;
+  background-color: #F6F5F3;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 24px 16px 0;
+  line-height: 32px;
+}
+
+.introduction-inner {
+  margin-bottom: 16px;
+}
+
+.introduction-inner:last-child {
+  margin-bottom: 0;
+}
+
+.introduction-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.introduction-text {
+  font-size: 16px;
+  margin: 4px 0 0 0;
+}
+
+.work-description {
+  padding-top: 50px;
+}
+
+.work-detail-image-wrap {
+  /* margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%); */
+}
+
+.description-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #222222;
+  padding: 0 16px;
+}
+
+.description-text {
+  color: #696969;
+  font-size: 20px;
+  padding: 0 16px;
+}
