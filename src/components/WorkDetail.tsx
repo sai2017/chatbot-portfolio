@@ -103,9 +103,11 @@ const WorkDetail: React.FC = () => {
                       <div className='work-description' key={descriptionIndex}>
                         <p className='description-title'>{description.descriptionTitle}</p>
                         <p className='description-text'>{description.descriptionText}</p>
-                        <div className='work-detail-image-wrap'>
-                          <img src={description.image} className='work-detail-image' alt='成果物の画像'/>
-                        </div>
+                        { description.image ? (
+                          <div className='work-detail-image-wrap'>
+                            <img src={description.image} className='work-detail-image' alt='成果物の画像'/>
+                          </div>
+                        ) : (<></>)}
                       </div>
                     )
                   })}
