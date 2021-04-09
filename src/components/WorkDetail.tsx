@@ -82,37 +82,35 @@ const WorkDetail: React.FC = () => {
         {
           WorkDetailDataset.map((work, index) => {
             return (
-              <a href={work.url} target="_blank" rel="noopener noreferrer" key={index}>
-                <div className='work-detail-wrap'>
-                  <img src={work.imgSrc} alt='成果物の画像' className='work-detail-image' onLoad={imageLoaded} />
-                  <p className='work-detail-title'>{work.title}</p>
-                  <p className='work-detail-role'>{work.year}</p>
-                  <p className='work-detail-overview'>{work.overview}</p>
-                  <div className='introduction-wrap'>
-                    <div className='introduction-inner'>
-                      <p className='introduction-title'>Product Owner</p>
-                      <p className='introduction-text'>{work.productOwber}</p>
-                    </div>
-                    <div className='introduction-inner'>
-                      <p className='introduction-title'>Role</p>
-                      <p className='introduction-text'>{work.role}</p>
-                    </div>
+              <div className='work-detail-wrap' key={index}>
+                <img src={work.imgSrc} alt='成果物の画像' className='work-detail-image' onLoad={imageLoaded} />
+                <p className='work-detail-title'>{work.title}</p>
+                <p className='work-detail-role'>{work.year}</p>
+                <p className='work-detail-overview'>{work.overview}</p>
+                <div className='introduction-wrap'>
+                  <div className='introduction-inner'>
+                    <p className='introduction-title'>Product Owner</p>
+                    <p className='introduction-text'>{work.productOwber}</p>
                   </div>
-                  { work.description.map((description, descriptionIndex) => {
-                    return (
-                      <div className='work-description' key={descriptionIndex}>
-                        <p className='description-title'>{description.descriptionTitle}</p>
-                        <p className='description-text'>{description.descriptionText}</p>
-                        { description.image ? (
-                          <div className='work-detail-image-wrap'>
-                            <img src={description.image} className='work-detail-image' alt='成果物の画像'/>
-                          </div>
-                        ) : (<></>)}
-                      </div>
-                    )
-                  })}
+                  <div className='introduction-inner'>
+                    <p className='introduction-title'>Role</p>
+                    <p className='introduction-text'>{work.role}</p>
+                  </div>
                 </div>
-              </a>
+                { work.description.map((description, descriptionIndex) => {
+                  return (
+                    <div className='work-description' key={descriptionIndex}>
+                      <p className='description-title'>{description.descriptionTitle}</p>
+                      <p className='description-text'>{description.descriptionText}</p>
+                      { description.image ? (
+                        <div className='work-detail-image-wrap'>
+                          <img src={description.image} className='work-detail-image' alt='成果物の画像'/>
+                        </div>
+                      ) : (<></>)}
+                    </div>
+                  )
+                })}
+              </div>
             )
           })
         }
