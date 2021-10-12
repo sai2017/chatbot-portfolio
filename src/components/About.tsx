@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/about.css'
-import ProfileIcon from '../assets/img/minto-image-min.jpg'
+import ProfileIcon from '../assets/img/profile_icon.jpg'
 import { skillDataset } from '../dataset'
 
 const About: React.FC = () => {
@@ -11,12 +11,22 @@ const About: React.FC = () => {
           <img src={ProfileIcon} alt='mintoの画像' className='profile-icon' />
           <div className='basic-text-profile-wrap'>
             <div className='profile-name'>minto</div>
-            <div className='profile-occupation'>UI/UX Desinger</div>
+            <div className='profile-occupation'>UI Desinger</div>
           </div>
         </div>
         <div className='profile-title'>ありのままで生きる。</div>
         <div className='introduction-wrap'>
-          エンジニアリングのできるUIデザイナーです。<br/>ここ数年はエンジニアとして複数のスタートアップで開発をしてきましたが、個人開発で0からサービスを作っていく過程で、デザインの面白みと重要性を実感しました。今はエンジニアリングに加え、UIデザイン、UXデザインまで幅を広げています。<br/>現在は業務委託で複数のベンチャーにUI/UXデザイナーとして参画しています。
+          元エンジニアのフリーランスUIデザイナーです。<br/>ワクワクすることを繰り返していたら、SIer→Webエンジニア→UIデザイナーというキャリアを歩んでいました。<br/>現在は複数のベンチャーでUIデザインを経験し、直近の案件ではUIデザインチームをリードしました。<br/>【得意】<br/>
+          ・デザインの言語化<br/>
+          ・論理的思考（仕様整理、情報設計、UI設計）<br/>
+          ・使いやすいだけでなく、統一感のあるシンプルで美しいUI<br/>
+          ・Figma<br/>
+
+          【苦手】<br/>
+          ・ビジュアルデザイン（バナー、ロゴ、LP等）<br/>
+          ・Photoshop<br/>
+          ・Illustrator<br/>
+
         </div>
         <div className='profile-title'>略歴</div>
         <div className='introduction-wrap'>
@@ -25,7 +35,7 @@ const About: React.FC = () => {
         ［2017〜2019］プログラミングを学びエンジニアに。<br/>
         　複数のスタートアップでサーバーサイドからフロントエンドまで経験。<br/>
         ［2020］個人開発を経験後、UI/UXデザインを学ぶ。<br/>
-        ［2021］フリーランスUI/UXデザイナーとして、複数案件に参画中。
+        ［2021］フリーランスUI/UXデザイナーとして活動開始。
         </div>
         <div className='profile-title'>スキル・特徴</div>
         <div className='tags-wrap'>

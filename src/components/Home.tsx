@@ -5,7 +5,7 @@ import { AnswersList, Chats } from './index';
 import { ChatbotDatasetModel } from '../models/ChatbotDatasetModel'
 import { AnswerModel } from '../models/AnswerModel'
 import { ChatModel } from '../models/ChatModel'
-import ProfileIcon from '../assets/img/minto-image-min.jpg'
+import ProfileIcon from '../assets/img/profile_icon.jpg'
 
 const Home: React.FC = () => {
   const [answers, setAnswers] = useState<AnswerModel[]>([]);
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
         <div className='first-view-wrap'>
           <img src={ProfileIcon} alt='mintoの画像' className='profile-icon' />
           <div className='first-view-name'>minto</div>
-          <div className='first-view-portfolio'>UI/UX Desinger</div>
+          <div className='first-view-portfolio'>UI Desinger</div>
         </div>
         <Chats chats={chats} />
         <AnswersList answers={answers} select={selectAnswer} />

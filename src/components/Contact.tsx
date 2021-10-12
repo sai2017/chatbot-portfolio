@@ -1,7 +1,7 @@
 import React from "react";
 import '../assets/styles/style.css'
 import '../assets/styles/contact.css'
-import ProfileIcon from '../assets/img/minto-image-min.jpg'
+import ProfileIcon from '../assets/img/profile_icon.jpg'
 import TwitterIcon from '../assets/img/ant-design_twitter-circle-filled.svg'
 import GitHubIcon from '../assets/img/ant-design_github-filled.svg'
 

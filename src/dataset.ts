@@ -4,7 +4,7 @@ export const chatbotDataset = {
           {content: "OK👌", nextId: "reazon"},
           {content: "ごめんなさい🙏", nextId: "sorry"}
       ],
-      question: "こんにちは！\nエンジニアリングもできるUI/UXデザイナーのmintoです。\nちょっとお話しませんか？",
+      question: "こんにちは！\nエンジニアリングもできるUIデザイナーのmintoです。\nちょっとお話しませんか？",
   },
   "reazon": {
     answers: [
@@ -87,6 +87,8 @@ export const skillDataset: {name: string, isEmphasis: boolean}[] = [
     { name: 'adobe XD',      isEmphasis: false },
     { name: 'デザインの言語化', isEmphasis: true },
     { name: 'デザインリサーチ', isEmphasis: false },
+    { name: 'デザインシステム', isEmphasis: true },
+    { name: '0→1フェーズ', isEmphasis: true },
     { name: 'React',         isEmphasis: false },
     { name: 'JavaScript',    isEmphasis: false },
     { name: 'TypeScript',    isEmphasis: false },
