@@ -14,6 +14,7 @@ import SnsProfileImage from '../assets/img/daily_cocoda_profile-min.jpg'
 import FigmaPortfolioImage from '../assets/img/minto_portfolio_cover-min.jpg'
 import WebPortfolioImage from '../assets/img/web_portfolio_image-min.jpg'
 import GreenSnapImage from '../assets/img/portfolio-greensnap-head.png'
+import MyIDEALImage from '../assets/img/myIDEAL_OGP.png'
 import { SpinnerCircularFixed } from 'spinners-react';
 import { Link } from 'react-router-dom';
 
@@ -31,6 +32,12 @@ const Work: React.FC = () => {
   }
 
   const WorksDataset: WorkModel[] = [
+    {
+      title: 'myIDEAL',
+      role: 'UIデザイン',
+      imgSrc: MyIDEALImage,
+      url: '/myideal'
+    },
     {
       title: 'GreenSnap',
       role: 'UIデザイン',
