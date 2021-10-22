@@ -1,6 +1,12 @@
 import React, { useState, useRef } from 'react';
 import '../assets/styles/work_detail.css'
 import HeadImage from '../assets/img/myIDEAL_OGP.png'
+import RoughImage from '../assets/img/ideal_rough_image11.png'
+import WireFrame from '../assets/img/ideal_wf_image1.png'
+import designSystemImage from '../assets/img/ideal_design-system.png'
+import graphicImage from '../assets/img/ideal_graphic_image1.png'
+import userStoryMappingImage from '../assets/img/ideal_user_story_mapping_image1.png'
+import prototypeImage from '../assets/img/ideal_prototype_image.png'
 import { SpinnerCircularFixed } from 'spinners-react';
 
 
@@ -20,11 +26,17 @@ const IdealDetail: React.FC = () => {
   const description = [
     {
       descriptionTitle: '業務フロー',
-      descriptionText: 'ELEMENTS社ではサービスのUIデザインを一人で担当しました。まずは要件の発案に至るまでの経緯、サービスで実現したいこと等の背景を伺った上で、オーナー様と毎日会話しながら仕様を決めていきました。イメージに乖離がないように、ペーパープロトタイプを作成し、そこからワイヤーフレーム、UIデザインを進めていきました。'
+      descriptionText: 'ELEMENTS社ではサービスのUIデザインを一人で担当しました。まずは要件の発案に至るまでの経緯、サービスで実現したいこと等の背景を伺った上で、オーナー様と毎日会話しながら仕様を決めていきました。イメージに乖離がないように、ラフデザインを作成し、そこからワイヤーフレーム、UIデザインを進めていきました。',
+      image: RoughImage,
+      imageTitle: 'ラフスケッチ',
+      image2: WireFrame,
+      imageTitle2: 'ワイヤーフレーム' 
     },
     {
       descriptionTitle: 'デザインシステム',
-      descriptionText: '・サービスのUIデザインと並行して、デザインシステムの構築もエンジニアや他デザイナーを巻き込みリードしました。目的としては、「UIに統一性を持たせ、将来的なデザインの負債軽減」、「UIの再利用性の高くし、コミュニケーションコストを削減し、開発スピードが上げる」、「デザインの属人化を無くすことで他のデザイナーへの教育コスト削減」がありました。自分自身のエンジニアの経験を活かしながら、コンポーネントを作成し、定期的にデザインシステムのミーティングを設け、継続的にメンテナンスしていました。'
+      descriptionText: '・サービスのUIデザインと並行して、デザインシステムの構築もエンジニアや他デザイナーを巻き込みリードしました。目的としては、「UIに統一性を持たせ、将来的なデザインの負債軽減」、「UIの再利用性の高くし、コミュニケーションコストを削減し、開発スピードが上げる」、「デザインの属人化を無くすことで他のデザイナーへの教育コスト削減」がありました。自分自身のエンジニアの経験を活かしながら、コンポーネントを作成し、定期的にデザインシステムのミーティングを設け、継続的にメンテナンスしていました。',
+      image: designSystemImage,
+      imageTitle: 'デザインシステムのコンポーネント群'
     },
     {
       descriptionTitle: '組織改善',
@@ -37,7 +49,20 @@ const IdealDetail: React.FC = () => {
     {
       descriptionTitle: 'グラフィック作成',
       descriptionText: 'UIデザイン以外でも、アイコン、バナー、簡単なイラストの作成を一部担当してました。',
-      image: ''
+      image: graphicImage,
+      imageTitle: 'グラフィックサンプル'
+    },
+    {
+      descriptionTitle: 'ユーザーストーリーマッピング作成',
+      descriptionText: 'サービスを最小限の機能でリリースするため、すなわちMVP(Minimum Viable Product)機能の決定を行いました。ユーザーストーリーマッピングという手法を用いて、ユーザーの行動やタスクを洗い出し、時系列のストーリーに沿ってマッピングしていきました。',
+      image: userStoryMappingImage,
+      imageTitle: 'ユーザーストーリーマッピング'
+    },
+    {
+      descriptionTitle: 'プロトタイプ作成',
+      descriptionText: 'プロトタイプの作成もFigmaで作成しました。「Figma Mirror」というアプリでスマホから実機で動きをオーナーやエンジニアに確認してもらいながら進めていきました。',
+      image: prototypeImage,
+      imageTitle: 'プロトタイプ'
     }
   ]
 
@@ -84,9 +109,21 @@ const IdealDetail: React.FC = () => {
                       <p className='description-title'>{description.descriptionTitle}</p>
                       <p className='description-text'>{description.descriptionText}</p>
                       { description.image ? (
-                        <div className='work-detail-image-wrap'>
-                          <img src={description.image} className='work-detail-image' alt='成果物の画像'/>
-                        </div>
+                        <>
+                          { description.image ? (
+                            <div className='work-detail-image-wrap'>
+                              <img src={description.image} className='work-detail-image' alt='成果物の画像'/>
+                              <p className='image-title'>{description.imageTitle}</p>
+                            </div>
+                          ) : (<></>)}
+                          { description.image2 ? (
+                            <div className='work-detail-image-wrap'>
+                              <img src={description.image2} className='work-detail-image' alt='成果物の画像'/>
+                              <p className='image-title'>{description.imageTitle2}</p>
+                            </div>
+                        ) : (<></>)}
+                        </>
+                        
                       ) : (<></>)}
                     </div>
                   )
