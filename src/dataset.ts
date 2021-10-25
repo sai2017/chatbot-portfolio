@@ -4,7 +4,7 @@ export const chatbotDataset = {
           {content: "OK👌", nextId: "reazon"},
           {content: "ごめんなさい🙏", nextId: "sorry"}
       ],
-      question: "こんにちは！\nエンジニアリングもできるUIデザイナーのmintoです。\nちょっとお話しませんか？",
+      question: "こんにちは！\n元エンジニアでUIデザイナーのmintoです。\nちょっとお話しませんか？",
   },
   "reazon": {
     answers: [
@@ -24,7 +24,6 @@ export const chatbotDataset = {
   "job_offer": {
       answers: [
           {content: "UI/UXデザイン🎨", nextId: "UIUX"},
-          {content: "コーディング💻", nextId: "coding"},
           {content: "その他", nextId: "other_jobs"}
       ],
       question: "ありがとうございます！\nどのようなお仕事内容でしょうか？",
