@@ -23,9 +23,9 @@ const About: React.FC = () => {
           ・Figma<br/>
 
           【苦手】<br/>
-          ・グラフィックデザイン（紙媒体、イラスト等）<br/>
-          ・Photoshop<br/>
-          ・Illustrator<br/><br/>
+          ・イラスト等のグラフィックデザイン<br/><br/>
+          {/* ・Photoshop<br/> */}
+          {/* ・Illustrator<br/><br/> */}
 
           「イメージと違う」がないように、UIを作り込む前に頻繁に手書きラフの共有や、要件定義のディスカッションをすることで手戻りのないようにしています。<br/>
 
