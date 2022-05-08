@@ -8,6 +8,7 @@ import About from './components/About'
 import Work from './components/Work'
 import WorkDetail from './components/WorkDetail'
 import IdealDetail from './components/IdealDetail'
+import HANOWA from './components/HANOWA'
 import Contact from './components/Contact'
 
 const ScrollToTop = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <Route path="/works" component={Work} />
           <Route path="/work/:id" component={WorkDetail} />
           <Route path="/myideal" component={IdealDetail} />
+          <Route path="/hanowa" component={HANOWA} />
           <Route path="/contact" component={Contact} />
           {/* Not Found */}
           <Route component={() => <Redirect to="/" />} />

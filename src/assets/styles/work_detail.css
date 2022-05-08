@@ -1,5 +1,6 @@
 .work-page-wrap {
   padding: 0 0 24px;
+  white-space: pre-wrap;
 }
 
 a {
