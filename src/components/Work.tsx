@@ -15,6 +15,7 @@ import FigmaPortfolioImage from '../assets/img/minto_portfolio_cover-min.jpg'
 import WebPortfolioImage from '../assets/img/web_portfolio_image-min.jpg'
 import GreenSnapImage from '../assets/img/portfolio-greensnap-head.png'
 import MyIDEALImage from '../assets/img/myIDEAL_OGP.png'
+import HANOWAImage from '../assets/img/hanowa_firstview.png'
 import { SpinnerCircularFixed } from 'spinners-react';
 import { Link } from 'react-router-dom';
 
@@ -33,7 +34,13 @@ const Work: React.FC = () => {
 
   const WorksDataset: WorkModel[] = [
     {
-      title: '【2021 ~ 参画中】myIDEAL',
+      title: '【2021 ~ 参画中】HANOWA',
+      role: 'UIデザイン',
+      imgSrc: HANOWAImage,
+      url: '/hanowa'
+    },
+    {
+      title: '【2021】myIDEAL',
       role: 'UIデザイン',
       imgSrc: MyIDEALImage,
       url: '/myideal'
