@@ -85,6 +85,7 @@ export const skillDataset: {name: string, isEmphasis: boolean}[] = [
     { name: 'Figma',         isEmphasis: true },
     { name: 'adobe XD',      isEmphasis: false },
     { name: 'デザインの言語化', isEmphasis: true },
+    { name: 'ユーザーインタビュー', isEmphasis: false },
     { name: 'デザインリサーチ', isEmphasis: false },
     { name: 'デザインシステム', isEmphasis: true },
     { name: '0→1フェーズ', isEmphasis: true },
