@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './assets/styles/style.css'
 import Home from './components/Home'
 import Header from './components/Header'
@@ -28,17 +28,16 @@ const App: React.FC = () => {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
-        <Switch>
-          <Route exact={true} path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/works" component={Work} />
-          <Route path="/work/:id" component={WorkDetail} />
-          <Route path="/myideal" component={IdealDetail} />
-          <Route path="/hanowa" component={HANOWA} />
-          <Route path="/contact" component={Contact} />
-          {/* Not Found */}
-          <Route component={() => <Redirect to="/" />} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/works" element={<Work />} />
+          <Route path="/work/:id" element={<WorkDetail />} />
+          <Route path="/myideal" element={<IdealDetail />} />
+          <Route path="/hanowa" element={<HANOWA />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
